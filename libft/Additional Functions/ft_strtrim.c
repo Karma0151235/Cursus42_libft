@@ -48,6 +48,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t		j;
 
 	str = (char *) malloc(sizeof(char) * (ft_count(s1, set) + 1));
+	if (str == NULL)
+                return (NULL);
 	i = 0;
 	j = 0;
 	while (s1[i] != '\0')
